@@ -1,0 +1,82 @@
+{
+  "_resourceType": "trigger",
+  "id": "0ba8307d-077e-4e65-8892-1ec1b2949200",
+  "name": "",
+  "prefabId": "",
+  "x": 74,
+  "y": 64,
+  "symbol": "trigger_27",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "0"
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "right"
+              ],
+              "override": true,
+              "__scriptTabs": "press"
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_SET_POSITION",
+                  "args": {
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": 76
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 66
+                    }
+                  },
+                  "id": "51980905-0cae-4eee-adc4-e631d82929c1"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "0",
+                    "value": {
+                      "type": "false"
+                    }
+                  },
+                  "id": "ade74380-8473-4725-8337-f0cc82be2874"
+                }
+              ]
+            },
+            "id": "d8632cc3-081b-4f80-a80a-4ba0f1b33a37"
+          }
+        ],
+        "false": []
+      },
+      "id": "a6be7f03-2f0c-4137-8113-b08cf599c452"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "left"
+        ]
+      },
+      "id": "36be86b9-c2ac-4753-9f8d-3f8797dbcdbf"
+    }
+  ],
+  "_index": 13
+}

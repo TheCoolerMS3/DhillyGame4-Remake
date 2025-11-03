@@ -1,0 +1,82 @@
+{
+  "_resourceType": "trigger",
+  "id": "24320a2a-cc35-4904-a3cd-3cc8a655a452",
+  "name": "",
+  "prefabId": "",
+  "x": 116,
+  "y": 44,
+  "symbol": "trigger_25",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "0"
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "left"
+              ],
+              "override": true,
+              "__scriptTabs": "press"
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_SET_POSITION",
+                  "args": {
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": 114
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 46
+                    }
+                  },
+                  "id": "45a1ffad-349e-4847-8f96-5e3c697f345e"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "0",
+                    "value": {
+                      "type": "false"
+                    }
+                  },
+                  "id": "9663ed8e-682d-4b03-a5c9-93001e0ba9b0"
+                }
+              ]
+            },
+            "id": "34a411cc-dc2b-4e58-ab3c-b557db4fae7f"
+          }
+        ],
+        "false": []
+      },
+      "id": "39f892f2-e7c1-4349-a1c1-9d594adaf644"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "left"
+        ]
+      },
+      "id": "8240c137-74f3-42b0-b4cd-5d29ee96ff25"
+    }
+  ],
+  "_index": 11
+}

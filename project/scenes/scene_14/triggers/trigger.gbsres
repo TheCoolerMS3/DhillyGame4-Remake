@@ -25,7 +25,6 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "Area completed!",
                 "You feel Dhilly attempt\nto contact you..."
               ],
               "__section": "text",

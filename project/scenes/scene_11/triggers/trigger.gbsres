@@ -22,31 +22,6 @@
       "children": {
         "true": [
           {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "Area completed!"
-              ],
-              "__section": "text",
-              "avatarId": "",
-              "minHeight": 4,
-              "maxHeight": 7,
-              "textX": 1,
-              "textY": 1,
-              "textHeight": 5,
-              "position": "bottom",
-              "clearPrevious": true,
-              "showFrame": "true",
-              "speedIn": -1,
-              "speedOut": -1,
-              "closeWhen": "key",
-              "closeButton": "a",
-              "closeDelayTime": 0.5,
-              "closeDelayFrames": 30
-            },
-            "id": "e749babd-5b2e-4814-bd3d-96132ae56002"
-          },
-          {
             "command": "EVENT_SWITCH_SCENE",
             "args": {
               "sceneId": "9d9e54af-ec2e-4864-a7c5-aa271f1248e1",
