@@ -72,7 +72,7 @@
       "command": "EVENT_REMOVE_INPUT_SCRIPT",
       "args": {
         "input": [
-          "left"
+          "right"
         ]
       },
       "id": "36be86b9-c2ac-4753-9f8d-3f8797dbcdbf"
