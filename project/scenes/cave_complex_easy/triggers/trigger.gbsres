@@ -1,0 +1,164 @@
+{
+  "_resourceType": "trigger",
+  "id": "db177765-29ab-473d-a9df-4a244ab39047",
+  "name": "",
+  "prefabId": "",
+  "x": 115,
+  "y": 95,
+  "symbol": "trigger_28",
+  "prefabScriptOverrides": {},
+  "width": 4,
+  "height": 2,
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "You have collected a\nDhilly piece!",
+          "It appears this one\nwill shoot you into the\nair... woah!"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "fb168aab-4ea7-4df1-a586-20dad5f3a1dc"
+    },
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "1d23cfc2-9b9f-4425-88c4-1dc37022064e"
+      },
+      "id": "3f71d5cb-99b6-4518-933e-782503c02747"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+      "args": {
+        "actorId": "$self$",
+        "speed": 4
+      },
+      "id": "9da938c8-e45b-4cd9-b3bf-9276da4376df"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 116
+        },
+        "y": {
+          "type": "number",
+          "value": 79
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "637f83f9-8458-4a45-9a4a-0aa458a21f7c"
+    },
+    {
+      "command": "EVENT_CAMERA_SHAKE",
+      "args": {
+        "time": 0.4,
+        "frames": 30,
+        "shakeDirection": "horizontal",
+        "magnitude": {
+          "type": "number",
+          "value": 15
+        }
+      },
+      "id": "c814fb9c-1336-42bf-9671-3adc812ddf7f"
+    },
+    {
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "0729d53f-1f2e-41b2-86b0-108b33192daf"
+      },
+      "id": "fdab8eea-c823-4823-b6ee-8d3fe98dc216"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 116
+        },
+        "y": {
+          "type": "number",
+          "value": 63
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "801a5520-bc78-4030-bbb0-3627cdedf246"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+      "args": {
+        "actorId": "$self$",
+        "speed": 1
+      },
+      "id": "fb3f1b67-e869-4642-a45f-c47b715a7bcb"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "7de7f55a-d48c-4bbd-af2b-0970eb9cbd4f"
+      },
+      "id": "8b0c73b8-2a0b-4131-bc53-27e1b5ad058c"
+    },
+    {
+      "command": "EVENT_SET_TIMER_SCRIPT",
+      "args": {
+        "timer": 1,
+        "duration": 1,
+        "frames": 30,
+        "__scriptTabs": "end"
+      },
+      "children": {
+        "script": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "0729d53f-1f2e-41b2-86b0-108b33192daf"
+            },
+            "id": "3f946f06-2b51-4ec2-860f-6bb4854f6106"
+          }
+        ]
+      },
+      "id": "5fa4f40b-18fd-45d8-8b44-14b4a7a40f85"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "1",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "094a9d1f-78d8-4151-a11d-32a78c21fd60"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "1d23cfc2-9b9f-4425-88c4-1dc37022064e"
+      },
+      "id": "cbfd016b-f398-47bb-8c31-1d88eafb3ee1"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 0
+}

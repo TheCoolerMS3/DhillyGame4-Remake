@@ -2,7 +2,7 @@
   "_resourceType": "scene",
   "id": "9daf3a03-f9db-4d8d-b46e-542f6aa57744",
   "_index": 5,
-  "name": "Scene 7",
+  "name": "Cave Complex Normal",
   "backgroundId": "aaeb5d24-5a10-4d26-9491-bdb7ef8a8f8a",
   "tilesetId": "",
   "width": 125,
@@ -10,7 +10,8 @@
   "type": "PLATFORM",
   "paletteIds": [
     "8705d0af-3c75-43ac-a138-2bd790b43b06",
-    "4eaf180c-6a1b-4087-a293-c2aa3971f5ca"
+    "4eaf180c-6a1b-4087-a293-c2aa3971f5ca",
+    "1a337112-be62-46fd-8acb-1640e797d8c3"
   ],
   "spritePaletteIds": [
     "8705d0af-3c75-43ac-a138-2bd790b43b06",
@@ -21,7 +22,13 @@
   "symbol": "scene_7",
   "x": 1000,
   "y": 30,
-  "script": [],
+  "script": [
+    {
+      "command": "EVENT_SHOW_SPRITES",
+      "args": {},
+      "id": "393e8b87-2ee4-40ac-a8ce-0df0e84fa97a"
+    }
+  ],
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],

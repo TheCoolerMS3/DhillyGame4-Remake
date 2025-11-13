@@ -2,7 +2,7 @@
   "_resourceType": "scene",
   "id": "bb3416ae-ff9b-469d-a2c1-29228191531c",
   "_index": 0,
-  "type": "LOGO",
+  "type": "TOPDOWN",
   "name": "Scene 1",
   "symbol": "scene_1",
   "x": 656,
@@ -21,6 +21,11 @@
   "spritePaletteIds": [],
   "autoFadeSpeed": 1,
   "script": [
+    {
+      "command": "EVENT_HIDE_SPRITES",
+      "args": {},
+      "id": "ace42ce8-a183-460e-8944-6d44327c81d6"
+    },
     {
       "command": "EVENT_MUSIC_PLAY",
       "args": {
@@ -43,6 +48,15 @@
         ]
       },
       "id": "e544f3b2-fedf-4d83-b3bc-a3729eed94d5"
+    },
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "9",
+        "trueText": "NORMAL Mode",
+        "falseText": "EASY Mode"
+      },
+      "id": "bb52171a-325e-411b-b08e-f51eff67f28a"
     },
     {
       "command": "EVENT_SWITCH_SCENE",

@@ -1,0 +1,94 @@
+{
+  "_resourceType": "actor",
+  "id": "7de7f55a-d48c-4bbd-af2b-0970eb9cbd4f",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "40dee626-6fe2-4634-a7d8-f6cc3a5e2c07",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_1",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Collect a Dhilly piece\nand come back."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "129afa3c-6e81-4c11-a988-8bd657658962"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "number",
+          "value": 78
+        },
+        "y": {
+          "type": "number",
+          "value": 36
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "5cef528e-98f6-4a8d-aaa0-a890b23ea461"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "1"
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "eef44d36-43ab-4237-806c-62e1da82cb88"
+          }
+        ],
+        "false": []
+      },
+      "id": "7d51342e-a834-48e3-b622-86bc295cc28c"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 78,
+  "y": 34,
+  "_index": 1
+}

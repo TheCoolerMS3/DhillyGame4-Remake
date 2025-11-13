@@ -20,6 +20,11 @@
       "id": "3",
       "name": "timer thing",
       "symbol": "var_timer_thing"
+    },
+    {
+      "id": "9",
+      "name": "difficult",
+      "symbol": "var_difficult"
     }
   ]
 }

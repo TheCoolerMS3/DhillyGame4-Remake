@@ -8,6 +8,6 @@
   "imageWidth": 1000,
   "imageHeight": 1000,
   "filename": "cave_complex/map.png",
-  "tileColors": "00d0b+015+003+016+009+014+0028bb+0123+002e2+01!00422+",
+  "tileColors": "00ac4+026+0077+026+0077+026+0077+024+00cc+015+003+016+009+014+0028bb+0123+002e2+01!003a5+017d+",
   "autoColor": false
 }

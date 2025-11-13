@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "64bb0c16-d872-42ce-8649-0c9e131566cb",
+  "name": "cave_complex/map_easy",
+  "symbol": "bg_cave_complex_map_copy",
+  "width": 125,
+  "height": 125,
+  "imageWidth": 1000,
+  "imageHeight": 1000,
+  "filename": "cave_complex/map_easy.png",
+  "tileColors": "00d0b+015+003+016+009+014+0028bb+0123+0035f+01!00328+017d+"
+}
